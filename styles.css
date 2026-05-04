@@ -370,6 +370,10 @@ h3 {
   right: 0;
 }
 
+#comidas .container {
+  width: min(1120px, calc(100% - 32px));
+}
+
 .section-heading {
   max-width: 680px;
   margin-bottom: 28px;
@@ -611,12 +615,17 @@ h3 {
     padding: 54px 0;
   }
 
+  #comidas .container {
+    width: calc(100% - 10px);
+  }
+
   .food-pages {
-    gap: 18px;
+    gap: 12px;
   }
 
   .food-page {
-    border-width: 4px;
+    border-width: 3px;
+    box-shadow: 0 12px 28px rgba(20, 12, 8, 0.22);
   }
 
   .menu-grid,
