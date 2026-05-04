@@ -337,6 +337,39 @@ h3 {
   padding: 76px 0;
 }
 
+.food-pages {
+  display: grid;
+  gap: 28px;
+}
+
+.food-page {
+  position: relative;
+  aspect-ratio: 0.707 / 1;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--paper);
+  border: 8px solid #082d21;
+  box-shadow: var(--shadow);
+}
+
+.food-page img {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  max-width: none;
+  object-fit: fill;
+}
+
+.food-page-left img {
+  left: 0;
+}
+
+.food-page-right img {
+  right: 0;
+}
+
 .section-heading {
   max-width: 680px;
   margin-bottom: 28px;
@@ -576,6 +609,14 @@ h3 {
   .band,
   .menu-section {
     padding: 54px 0;
+  }
+
+  .food-pages {
+    gap: 18px;
+  }
+
+  .food-page {
+    border-width: 4px;
   }
 
   .menu-grid,
