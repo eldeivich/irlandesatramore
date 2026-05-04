@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 76px;
 }
 
 body {
@@ -49,6 +50,7 @@ a {
 
 .site-header {
   min-height: 94vh;
+  padding-top: 76px;
   color: #fff8e7;
   background:
     linear-gradient(90deg, rgba(15, 26, 18, 0.9), rgba(15, 26, 18, 0.58) 52%, rgba(15, 26, 18, 0.25)),
@@ -57,9 +59,10 @@ a {
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 50%;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,6 +70,7 @@ a {
   min-height: 76px;
   margin: 0 auto;
   padding: 14px 0;
+  transform: translateX(-50%);
 }
 
 .nav::before {
