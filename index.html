@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tramore Irish Tavern, una taberna irlandesa vintage con comida casera, bebidas y una cuidada carta de cervezas."
+    />
+    <title>Tramore Irish Tavern</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Tramore Irish Tavern inicio">
+          <span class="brand-mark">T</span>
+          <span>
+            <strong>Tramore</strong>
+            <small>Irish Tavern</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Abrir menú</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#comidas">Carta de comidas</a>
+          <a href="#bebidas">Carta de bebidas</a>
+          <a href="#cervezas">Carta de cervezas</a>
+        </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Pub irlandés vintage</p>
+          <h1 id="hero-title">Tramore Irish Tavern</h1>
+          <p class="hero-copy">
+            Cocina de taberna, grifos bien tirados y un salón con madera, música y luz cálida
+            para alargar la sobremesa.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#comidas">Ver carta</a>
+            <a class="button button-secondary" href="#contacto">Reservar mesa</a>
+          </div>
+        </div>
+
+        <aside class="hero-note" aria-label="Horario destacado">
+          <span>Hoy</span>
+          <strong>17:00 - 01:30</strong>
+          <small>Cocina abierta hasta las 23:30</small>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="intro band">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">El espiritu de Tramore</p>
+            <h2>Una taberna para comer, brindar y quedarse un rato mas.</h2>
+          </div>
+          <p>
+            Nuestro menú mezcla clásicos irlandeses, producto local y una barra pensada para
+            disfrutar sin prisas. Todo con una estética de pub tradicional, cuidada y cómoda en
+            móvil.
+          </p>
+        </div>
+      </section>
+
+      <section class="menu-section" id="comidas">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Carta de comidas</p>
+            <h2>Platos de taberna</h2>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card featured">
+              <span class="menu-label">Especialidad</span>
+              <h3>Irish beef stew</h3>
+              <p>Estofado lento de ternera, verduras, cerveza negra y puré cremoso.</p>
+              <strong>14,90 €</strong>
+            </article>
+            <article class="menu-card">
+              <h3>Fish & chips</h3>
+              <p>Bacalao crujiente, patatas cortadas a mano, salsa tártara y limón.</p>
+              <strong>13,80 €</strong>
+            </article>
+            <article class="menu-card">
+              <h3>Tramore burger</h3>
+              <p>Carne madurada, cheddar irlandés, cebolla caramelizada y pan brioche.</p>
+              <strong>15,50 €</strong>
+            </article>
+            <article class="menu-card">
+              <h3>Shepherd's pie</h3>
+              <p>Carne guisada, verduras y gratinado de patata con mantequilla.</p>
+              <strong>13,90 €</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section drinks" id="bebidas">
+        <div class="container split">
+          <div class="section-heading">
+            <p class="eyebrow">Carta de bebidas</p>
+            <h2>Whiskey, copas y sin alcohol</h2>
+            <p>
+              Una barra clásica con espíritu irlandés: tragos cortos, cócteles de pub y opciones
+              frescas para acompañar la cena.
+            </p>
+          </div>
+
+          <div class="list-panel">
+            <div class="list-row">
+              <span>Irish coffee</span>
+              <strong>6,50 €</strong>
+            </div>
+            <div class="list-row">
+              <span>Whiskey Jameson</span>
+              <strong>7,00 €</strong>
+            </div>
+            <div class="list-row">
+              <span>Moscow mule</span>
+              <strong>8,50 €</strong>
+            </div>
+            <div class="list-row">
+              <span>Ginger beer sin alcohol</span>
+              <strong>4,20 €</strong>
+            </div>
+            <div class="list-row">
+              <span>Limonada casera</span>
+              <strong>3,80 €</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cervezas">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Carta de cervezas</p>
+            <h2>Grifos y botellas</h2>
+          </div>
+
+          <div class="beer-grid">
+            <article>
+              <span class="beer-style">Stout</span>
+              <h3>Black Coast Pint</h3>
+              <p>Cremosa, tostada y con final seco.</p>
+              <strong>5,40 €</strong>
+            </article>
+            <article>
+              <span class="beer-style">Red Ale</span>
+              <h3>Tramore Red</h3>
+              <p>Malta caramelo, cuerpo medio y amargor suave.</p>
+              <strong>5,20 €</strong>
+            </article>
+            <article>
+              <span class="beer-style">IPA</span>
+              <h3>Harbour Hops</h3>
+              <p>Cítrica, aromática y fresca.</p>
+              <strong>5,80 €</strong>
+            </article>
+            <article>
+              <span class="beer-style">Lager</span>
+              <h3>Dublin Crisp</h3>
+              <p>Limpia, ligera y perfecta para abrir mesa.</p>
+              <strong>4,90 €</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact band" id="contacto">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Reserva y ven</p>
+            <h2>Tu mesa junto a la barra está esperando.</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="tel:+34000000000">Llamar ahora</a>
+            <a class="button button-secondary" href="mailto:reservas@tramoreirishtavern.com">
+              Escribir
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Tramore Irish Tavern</p>
+      <small>Imagen principal: Selim Karadayi / Pexels.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
