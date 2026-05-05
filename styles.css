@@ -371,7 +371,8 @@ h3 {
 }
 
 #comidas .container,
-#bebidas .container {
+#bebidas .container,
+#cervezas .container {
   width: min(1120px, calc(100% - 32px));
 }
 
@@ -617,7 +618,8 @@ h3 {
   }
 
   #comidas .container,
-  #bebidas .container {
+  #bebidas .container,
+  #cervezas .container {
     width: calc(100% - 10px);
   }
 
