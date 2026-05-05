@@ -12,8 +12,8 @@ const weeklyHours = [
   { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
   { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
   { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
-  { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 00:00" },
-  { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 00:00" },
+  { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 23:30" },
+  { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 23:30" },
 ];
 
 const updateTodayHours = () => {
