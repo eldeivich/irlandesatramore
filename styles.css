@@ -370,7 +370,8 @@ h3 {
   right: 0;
 }
 
-#comidas .container {
+#comidas .container,
+#bebidas .container {
   width: min(1120px, calc(100% - 32px));
 }
 
@@ -615,7 +616,8 @@ h3 {
     padding: 54px 0;
   }
 
-  #comidas .container {
+  #comidas .container,
+  #bebidas .container {
     width: calc(100% - 10px);
   }
 
