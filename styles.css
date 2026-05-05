@@ -5,7 +5,9 @@
   --green: #173f2b;
   --green-soft: #215b3d;
   --red: #7c2d22;
+  --burgundy: #5c130f;
   --brass: #c3964a;
+  --gold: #e0aa35;
   --smoke: #39342e;
   --line: rgba(32, 24, 21, 0.18);
   --shadow: 0 22px 60px rgba(20, 12, 8, 0.28);
@@ -24,8 +26,9 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(195, 150, 74, 0.2), transparent 28rem),
-    linear-gradient(180deg, var(--cream), #e9d5ad 58%, #f6eddd);
+    radial-gradient(circle at top left, rgba(124, 45, 34, 0.2), transparent 26rem),
+    radial-gradient(circle at 90% 8%, rgba(23, 63, 43, 0.18), transparent 24rem),
+    linear-gradient(180deg, #f6ead1, #e8cf9e 58%, #f4e8d0);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.5;
 }
@@ -38,9 +41,10 @@ body::before {
   content: "";
   opacity: 0.24;
   background-image:
+    radial-gradient(circle, rgba(92, 19, 15, 0.08) 1px, transparent 1px),
     linear-gradient(rgba(32, 24, 21, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(32, 24, 21, 0.04) 1px, transparent 1px);
-  background-size: 34px 34px;
+  background-size: 18px 18px, 34px 34px, 34px 34px;
 }
 
 a {
@@ -53,9 +57,11 @@ a {
   padding-top: 76px;
   color: #fff8e7;
   background:
-    linear-gradient(90deg, rgba(15, 26, 18, 0.9), rgba(15, 26, 18, 0.58) 52%, rgba(15, 26, 18, 0.25)),
-    linear-gradient(180deg, rgba(15, 26, 18, 0.2), rgba(15, 26, 18, 0.86)),
+    linear-gradient(90deg, rgba(36, 8, 7, 0.92), rgba(23, 63, 43, 0.68) 52%, rgba(36, 8, 7, 0.3)),
+    linear-gradient(180deg, rgba(15, 26, 18, 0.16), rgba(36, 8, 7, 0.88)),
     url("assets/tramore-pub-hero.jpg") center / cover;
+  border-bottom: 5px solid var(--burgundy);
+  box-shadow: inset 0 -2px 0 rgba(224, 170, 53, 0.76);
 }
 
 .nav {
@@ -81,8 +87,10 @@ a {
   z-index: -1;
   height: 76px;
   content: "";
-  background: rgba(14, 31, 22, 0.86);
-  border-bottom: 1px solid rgba(255, 248, 231, 0.14);
+  background:
+    linear-gradient(90deg, rgba(92, 19, 15, 0.94), rgba(8, 45, 33, 0.96)),
+    var(--green);
+  border-bottom: 2px solid rgba(224, 170, 53, 0.68);
   backdrop-filter: blur(14px);
 }
 
@@ -97,9 +105,11 @@ a {
   width: 46px;
   height: 46px;
   place-items: center;
-  color: var(--green);
-  background: var(--brass);
-  border: 2px solid #f7d788;
+  color: #fff2d0;
+  background:
+    radial-gradient(circle, rgba(124, 45, 34, 0.95), rgba(56, 13, 10, 0.98)),
+    var(--burgundy);
+  border: 2px solid var(--gold);
   border-radius: 50%;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.7rem;
@@ -112,8 +122,10 @@ a {
 }
 
 .brand strong {
+  color: #fff2d0;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.35rem;
+  text-shadow: 0 2px 0 rgba(92, 19, 15, 0.8);
 }
 
 .brand small {
@@ -134,17 +146,18 @@ a {
 .nav-menu a {
   padding: 10px 14px;
   color: rgba(255, 248, 231, 0.86);
-  border: 1px solid transparent;
-  border-radius: 999px;
+  border: 1px solid rgba(224, 170, 53, 0.22);
+  border-radius: 4px;
   font-size: 0.92rem;
   font-weight: 700;
+  background: rgba(255, 248, 231, 0.04);
 }
 
 .nav-menu a:hover,
 .nav-menu a:focus-visible {
   color: #fff;
-  border-color: rgba(247, 216, 136, 0.4);
-  background: rgba(255, 248, 231, 0.1);
+  border-color: rgba(247, 216, 136, 0.72);
+  background: rgba(92, 19, 15, 0.42);
 }
 
 .nav-toggle {
@@ -218,7 +231,11 @@ h3 {
 h1 {
   max-width: 820px;
   margin-bottom: 18px;
+  color: #fff2d0;
   font-size: clamp(3.3rem, 8vw, 7.7rem);
+  text-shadow:
+    0 4px 0 rgba(92, 19, 15, 0.78),
+    0 18px 34px rgba(0, 0, 0, 0.38);
 }
 
 h2 {
@@ -252,29 +269,46 @@ h3 {
   min-height: 48px;
   padding: 13px 20px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .button-primary {
-  color: #1d1713;
-  background: var(--brass);
+  color: #fff6df;
+  background:
+    linear-gradient(180deg, rgba(124, 45, 34, 0.98), rgba(92, 19, 15, 0.98)),
+    var(--burgundy);
+  border-color: rgba(247, 216, 136, 0.8);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
 }
 
 .button-secondary {
   color: #fff8e7;
-  border-color: rgba(255, 248, 231, 0.34);
-  background: rgba(255, 248, 231, 0.08);
+  border-color: rgba(247, 216, 136, 0.52);
+  background: rgba(8, 45, 33, 0.56);
 }
 
 .hero-note {
+  position: relative;
   padding: 22px;
-  background: rgba(15, 26, 18, 0.72);
-  border: 1px solid rgba(247, 216, 136, 0.36);
-  border-radius: 8px;
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(255, 248, 231, 0.9), rgba(239, 224, 191, 0.92)),
+    var(--paper);
+  border: 2px solid var(--burgundy);
+  border-radius: 4px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
+}
+
+.hero-note::before {
+  position: absolute;
+  inset: 6px;
+  pointer-events: none;
+  content: "";
+  border: 1px solid rgba(195, 150, 74, 0.72);
 }
 
 .hero-note span,
@@ -284,7 +318,7 @@ h3 {
 }
 
 .hero-note span {
-  color: var(--brass);
+  color: var(--burgundy);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -295,7 +329,7 @@ h3 {
 }
 
 .hero-note small {
-  color: rgba(255, 248, 231, 0.72);
+  color: rgba(32, 24, 21, 0.72);
 }
 
 .container {
@@ -304,11 +338,26 @@ h3 {
 }
 
 .band {
+  position: relative;
   padding: 70px 0;
-  color: #fff8e7;
+  color: var(--ink);
   background:
-    linear-gradient(135deg, rgba(124, 45, 34, 0.9), rgba(23, 63, 43, 0.96)),
-    var(--green);
+    linear-gradient(rgba(255, 248, 231, 0.86), rgba(239, 224, 191, 0.9)),
+    var(--paper);
+  border-top: 5px solid var(--burgundy);
+  border-bottom: 5px solid var(--burgundy);
+  box-shadow:
+    inset 0 2px 0 rgba(224, 170, 53, 0.72),
+    inset 0 -2px 0 rgba(224, 170, 53, 0.72);
+}
+
+.band::before {
+  position: absolute;
+  inset: 12px max(16px, calc((100% - 1120px) / 2));
+  pointer-events: none;
+  content: "";
+  border: 1px solid rgba(124, 45, 34, 0.28);
+  border-radius: 4px;
 }
 
 .intro-grid,
@@ -329,17 +378,41 @@ h3 {
 
 .intro p:last-child,
 .contact p:last-child {
-  color: rgba(255, 248, 231, 0.78);
+  color: rgba(32, 24, 21, 0.72);
   font-size: 1.05rem;
 }
 
 .menu-section {
+  position: relative;
   padding: 76px 0;
+  background:
+    radial-gradient(circle at 18% 0, rgba(195, 150, 74, 0.2), transparent 28rem),
+    linear-gradient(180deg, rgba(247, 238, 219, 0.92), rgba(230, 208, 164, 0.9));
+  overflow: hidden;
 }
 
 .food-pages {
+  position: relative;
   display: grid;
-  gap: 28px;
+  gap: clamp(10px, 1.8vw, 20px);
+  padding: clamp(10px, 2vw, 22px);
+  background:
+    linear-gradient(135deg, rgba(8, 45, 33, 0.98), rgba(23, 63, 43, 0.96)),
+    var(--green);
+  border: 1px solid rgba(247, 216, 136, 0.62);
+  border-radius: 8px;
+  box-shadow:
+    0 28px 70px rgba(20, 12, 8, 0.32),
+    inset 0 0 0 4px rgba(247, 216, 136, 0.08);
+}
+
+.food-pages::before {
+  position: absolute;
+  inset: 7px;
+  pointer-events: none;
+  content: "";
+  border: 1px solid rgba(195, 150, 74, 0.42);
+  border-radius: 5px;
 }
 
 .food-page {
@@ -349,8 +422,21 @@ h3 {
   margin: 0 auto;
   overflow: hidden;
   background: var(--paper);
-  border: 8px solid #082d21;
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(247, 216, 136, 0.7);
+  border-radius: 3px;
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(32, 24, 21, 0.08);
+}
+
+.food-page::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  box-shadow:
+    inset 0 0 0 1px rgba(8, 45, 33, 0.16),
+    inset 0 0 24px rgba(32, 24, 21, 0.12);
 }
 
 .food-page img {
@@ -370,10 +456,28 @@ h3 {
   right: 0;
 }
 
+.beer-pages .food-page img {
+  width: calc(200% + 36px);
+}
+
 #comidas .container,
 #bebidas .container,
 #cervezas .container {
   width: min(1120px, calc(100% - 32px));
+}
+
+@media (min-width: 900px) {
+  .food-pages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .food-page-left {
+    border-radius: 3px 0 0 3px;
+  }
+
+  .food-page-right {
+    border-radius: 0 3px 3px 0;
+  }
 }
 
 .section-heading {
@@ -442,7 +546,9 @@ h3 {
 }
 
 .drinks {
-  background: rgba(255, 248, 231, 0.48);
+  background:
+    radial-gradient(circle at 82% 0, rgba(195, 150, 74, 0.18), transparent 26rem),
+    linear-gradient(180deg, rgba(247, 238, 219, 0.92), rgba(223, 196, 142, 0.9));
 }
 
 .list-panel {
@@ -487,6 +593,7 @@ h3 {
 }
 
 .contact h2 {
+  color: var(--burgundy);
   margin-bottom: 0;
 }
 
@@ -501,8 +608,11 @@ h3 {
   justify-content: space-between;
   gap: 10px;
   padding: 24px max(16px, calc((100% - 1120px) / 2));
-  color: rgba(255, 248, 231, 0.76);
-  background: #16130f;
+  color: rgba(255, 248, 231, 0.82);
+  background:
+    linear-gradient(90deg, rgba(92, 19, 15, 0.96), rgba(8, 45, 33, 0.98)),
+    #16130f;
+  border-top: 2px solid rgba(224, 170, 53, 0.68);
 }
 
 .footer p,
