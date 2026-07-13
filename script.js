@@ -8,9 +8,9 @@ const kitchenHours = document.querySelector("#kitchen-hours");
 const dayNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 const weeklyHours = [
   { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
-  { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
-  { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
   { tavern: "Cerrado", kitchen: "Cocina cerrada" },
+  { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
+  { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
   { tavern: "17:00 - 00:30", kitchen: "Cocina de 19:30 a 23:00" },
   { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 23:30" },
   { tavern: "17:00 - 02:00", kitchen: "Cocina de 19:30 a 23:30" },
